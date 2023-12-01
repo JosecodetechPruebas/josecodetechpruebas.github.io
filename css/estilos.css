@@ -1,0 +1,151 @@
+/* Media Query para dispositivos con ancho máximo de 768px (pantallas pequeñas) */
+@media screen and (max-width: 768px) {
+    /* Estilos generales para pantallas pequeñas */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #333; /* Fondo oscuro */
+        color: #fff; /* Texto blanco */
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+/* Estilos para la cabecera */
+header {
+    background-color: #333; /* Color de fondo de la cabecera */
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column; /* Cambio a disposición vertical en pantallas pequeñas */
+    align-items: center;
+}
+
+/* Estilos para el logo */
+header img {
+    max-width: 240px; /* Tamaño máximo del logo */
+    height: auto;
+    margin-bottom: 10px; /* Separación entre el logo y el menú en pantallas pequeñas */
+}
+
+/* Estilos para el menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centrar los elementos del menú en pantallas pequeñas */
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 10px; /* Espaciado entre los elementos del menú en pantallas pequeñas */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Color del texto del menú */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+nav ul li a:hover {
+    color: #FFA000; /* Cambio de color al pasar el ratón */
+}
+
+    /* Estilos para la barra lateral en pantallas pequeñas */
+    .sidebar {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        background-color: #FFAB91; /* Color naranja claro */
+        color: #333; /* Texto oscuro */
+        padding: 20px;
+    }
+
+    /* Estilos para el contenido principal en pantallas pequeñas */
+    .content {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        padding: 20px;
+    }
+
+    /* Estilos para el pie de página en pantallas pequeñas */
+    .footer {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        background-color: #FFCCBC; /* Color naranja claro */
+        color: #333; /* Texto oscuro */
+    }
+}
+
+/* Media Query para dispositivos con ancho minimo de 769px (dispositivos escritorio) */
+@media screen and (min-width: 769px) {
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Color de texto principal */
+
+}
+/* Estilos para la cabecera */
+header {
+    background-color: #333; /* Color de fondo de la cabecera */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el logo */
+header img {
+    max-width: 240px; /* Tamaño máximo del logo */
+    height: auto;
+}
+
+/* Estilos para el menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Color del texto del menú */
+}
+nav ul li a:hover {
+    color: #FFA000; /* Cambio de color al pasar el ratón */
+}
+.main-content{
+    display: flex; /* Utilizar flexbox para organizar el diseño */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
+    flex-direction: row; /* Por defecto, los elementos se colocan en fila (horizontalmente) */
+
+}
+/* Estilos para el contenido principal */
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    width:15%;
+    background-color: #FFAB91; /* Color naranja claro */
+    color: #333; /* Texto oscuro */
+    padding: 20px;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #FFCCBC; /* Color naranja claro */
+    color: #333; /* Texto oscuro */
+}
+
+
+
+}
